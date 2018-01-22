@@ -19,14 +19,57 @@
           <p>My skills are HTML5, CSS3, jQuery.</p>
         </div>
       </div>
+
+      <div class="image container-fluid">
+        <div class="image-holder container-fluid"></div>
+      </div>
+      <div class="content2 container-fluid">
+          <h1>Lensation Crew</h1>
+          <p>- web page -</p>
+      </div>
         <div class="footer">
           <div class="copy">
             <p>Copyrigth @ 2018 Levente Molnar. All Rights Reserved.</p>
           </div>
           <div class="work">
-            <a class="button" href="#">Portofolio</a>
+            <input type="button" class="button" value="Portofolio">
           </div>
         </div>
       </div>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+          $(".button").click(function() {
+              $(".image").toggle("slide", 500);
+
+              var options = {direction:'right'};
+              $(".content2").toggle("slide", options , 500);
+
+              $(".copy").toggleClass("copycolor", 300);
+          });
+
+                    $(function(){$(".button").click(function() {
+                 $(this).val() == "Home" ? play_int() : play_pause();
+              });
+          });
+
+
+          function play_int() {
+              $(".button").val("Portofolio");
+              // do play
+          }
+
+          function play_pause() {
+              $(".button").val("Home");
+              // do pause
+          }
+
+        });
+      </script>
   </body>
 </html>
