@@ -78,7 +78,7 @@ section {
   z-index: -1;
   position: absolute;
   background-color: #333;
-  height: 75%;
+  height: 100%;
   width: 100%;
   transform: skewY(13deg);
 }
@@ -105,17 +105,6 @@ section {
   position: relative;
   grid-column: 2 / 3;
   padding: 1rem;
-}
-
-.overlay {
-  position: relative;
-  grid-column: 2 / 3;
-  padding: 1rem;
-  background: #333;
-  opacity: 0.7;
-  height: 100%;
-  max-width: 100%;
-  top: 0;
 }
 
 .img-responsive {
