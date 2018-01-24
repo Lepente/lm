@@ -23,17 +23,12 @@
       <div class="title">
         <h1>About</h1>
       </div>
-      <div class="icons"></div>
     </section>
 
     <section class="content2">
       <span>- Hello, my name is Levente Molnar. I'm a front-end web designer from Romania. My passion and hobby is designing magnificent websites based on user experience.</span>
       <span>I'm focusing on clean and simple but also good looking websites.</span>
-    </section>
-
-    <section class="content3">
-      <span style="padding-bottom:6rem;">I'm hireable for projects as a freelancer.</span>
-
+      <span style="padding-bottom:6rem;text-align:center">I'm hireable for projects as a freelancer.</span>
     </section>
 
     <section>
@@ -41,19 +36,19 @@
       <div class="title">
         <h1>My work</h1>
       </div>
-      <div class="icons"></div>
     </section>
 
     <div class="work-site">
       <div class="img-desc">
-        <h2>First Project</h2>
+        <h3>First Project</h3>
         <p>Lensation Crew's Landing Page</p>
         <span>On this site I used a single row for displaying the content, easily readable and a clean website.</span>
       </div>
       <div class="img-holder">
-        <img class="img-responsive" src="images/Untitled.jpg" alt="First Project">
+        <a href="https://lepente.github.io/crew">
+          <img class="img-responsive" src="images/Untitled.jpg" alt="First Project">
+        </a>
       </div>
-
     </div>
 
     <footer>
@@ -68,30 +63,7 @@
       <script type="text/javascript">
         $(document).ready(function(){
 
-          $(".button").click(function() {
-              $(".image").toggle("slide", 500);
-
-              var options = {direction:'right'};
-              $(".content2").toggle("slide", options , 500);
-
-              $(".copy").toggleClass("copycolor", 300);
-          });
-
-                    $(function(){$(".button").click(function() {
-                 $(this).val() == "Home" ? play_int() : play_pause();
-              });
-          });
-
-
-          function play_int() {
-              $(".button").val("Portofolio");
-              // do play
-          }
-
-          function play_pause() {
-              $(".button").val("Home");
-              // do pause
-          }
+          
 
         });
       </script>
