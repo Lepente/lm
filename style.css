@@ -2,10 +2,10 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #333;
-  background: #fff;
+  background: #F1DAC4;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -37,7 +37,7 @@ h1, h2, p {
   grid-column: 2 / 3;
   color: white;
   padding: 0 2rem 0 2rem;
-  min-width: 392px;
+  min-width: 650px;
   justify-items: end;
 }
 
@@ -73,7 +73,7 @@ section {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
-  color: #6f4e37;
+  color: #878E88;
 }
 
 .img-desc {
@@ -117,13 +117,14 @@ footer {
 /* Other */
 
 .content h1 {
-  font-size: 50px;
+  font-size: 70px;
+  color: #878E88;
 }
 
 .title {
   position: relative;
   grid-column: 2 / 3;
-  background: #37586f;
+  background: #F55D3E;
   color: #fff;
   border-radius: 100px;
   bottom: 1.5rem;
@@ -173,7 +174,7 @@ footer {
   }
 
     .content h1{
-      font-size: 25px;
+      font-size: 30px;
     }
 
     .img-holder {
