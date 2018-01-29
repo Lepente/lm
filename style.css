@@ -12,20 +12,57 @@ h1, h2, h3, p {
 /* Background */
 
 .header-image {
-  background-image: url("images/en.JPG");
+  z-index: 1;
+  position: relative;
+  background-image: url("images/en.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-position: center right;
+  background-position: center center;
 }
 
+.button {
+  background: #fff;
+  color: #D4CB92;
+  border-radius: 100px;
+  padding: 0 2rem 0 2rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s
+}
+
+.button:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background: #D4CB92;
+}
+
+.slice {
+  z-index: 1;
+   position: absolute;
+   top: -25vh;
+   height: 75vh;
+   width: 100%;
+   background: #333;
+   transform: skewY(13deg);
+}
+
+.slice2 {
+  z-index: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #D4CB92;
+}
 /* Grid */
 
 .header {
   z-index: 123;
-  height: 70vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 3fr 2fr 0.5fr;
   align-items: center;
@@ -35,7 +72,7 @@ h1, h2, h3, p {
 .content {
   display: grid;
   grid-column: 2 / 3;
-  color: white;
+  color: #fff;
   padding: 0 2rem 0 2rem;
   min-width: 650px;
   justify-items: end;
@@ -47,9 +84,11 @@ section {
 }
 
 .content2 {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  padding: 0 1rem 0 1rem;
+  padding: 2rem 1rem 0 1rem;
 }
 
 .content2 span {
@@ -60,7 +99,7 @@ section {
 }
 
 .random {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   background: #333;
   height: 60vh;
@@ -73,7 +112,7 @@ section {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
-  color: #878E88;
+  color: #D4CB92;
 }
 
 .img-desc {
@@ -81,6 +120,7 @@ section {
   text-align: center;
   padding: 1rem 5rem 0 5rem;
   font-size: 25px;
+  z-index: 1;
 }
 
 .img-desc p {
@@ -118,17 +158,17 @@ footer {
 
 .content h1 {
   font-size: 70px;
-  color: #878E88;
+  color: #fff;
 }
 
 .title {
   position: relative;
   grid-column: 2 / 3;
-  background: #3185FC;
+  background: #D4CB92;
   color: #fff;
   border-radius: 100px;
-  bottom: 1.5rem;
   padding: 0 2rem 0 2rem;
+  bottom: 1.5rem;
   font-size: 20px;
   box-shadow: 0 0 20px 4px rgba(0,0,0,0.3);
 }
@@ -136,12 +176,6 @@ footer {
 /* Media Queries */
 
 @media (max-width: 500px) {
-  .back {
-    background-image: url("images/smallen.jpg")
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 
   .content h1{
     font-size: 25px;
