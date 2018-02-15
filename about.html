@@ -10,6 +10,44 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
+    <script>
+      $(document).ready(function(){
 
+          window.sr = ScrollReveal ({
+            reset: false
+          });
+
+          sr.reveal('.title', {
+            duration: 1500,
+            origin: 'right',
+            distance: '400px'
+          });
+
+          sr.reveal('.block2', {
+            duration: 800,
+            scale: 1,
+            origin: 'right',
+            easing: 'linear',
+            distance: '400px'
+          });
+
+          sr.reveal('.block', {
+            duration: 800,
+            scale: 1,
+            origin: 'left',
+            easing: 'linear',
+            distance: '400px'
+          });
+
+          sr.reveal('.nav', {
+            duration: 500,
+            scale: 1,
+            opacity: 0,
+            origin: 'bottom',
+            easing: 'linear',
+          });
+
+      });
+    </script>
   </body>
 </html>
