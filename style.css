@@ -7,6 +7,7 @@ body {
   margin: 0;
   color: #333;
   background: #fff;
+  height: 100vh;
 }
 
 h1, h2, h3, p {
@@ -18,17 +19,16 @@ h1, h2, h3, p {
   background-image: url("images/en.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center center;
 }
 
 .header {
   z-index: 2;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 3fr 1fr 0.5fr;
   align-items: center;
-
 }
 
 .title {
@@ -75,15 +75,14 @@ h1, h2, h3, p {
 .nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  bottom: 50px;
-  position: relative;
-  max-width: 70vw;
+  bottom: 0;
+  position: absolute;
+  min-width: 70vw;
   background: #fff;
   height: 50px;
   font-size: 25px;
   align-items: center;
   justify-items: center;
-  box-shadow: 0 0 20px 4px rgba(0,0,0,0.3);
 }
 
 .about {
@@ -148,8 +147,9 @@ a:hover {
   .nav {
     font-size: 20px;
     height: 35px;
-    max-width: 85vw;
-    bottom: 35px;
+    min-width: 85vw;
+    bottom: 0;
+
     grid-template-columns: repeat(2,1fr);
   }
 
@@ -163,6 +163,7 @@ a:hover {
 
   .projects {
     grid-column: 2 / -1;
+    padding-right: 1rem;
   }
 }
 
@@ -184,8 +185,8 @@ a:hover {
   .nav {
     font-size: 25px;
     height: 40px;
-    max-width: 80vw;
-    bottom: 40px;
+    min-width: 80vw;
+    bottom: 0;
     grid-template-columns: repeat(2,1fr);
   }
 
