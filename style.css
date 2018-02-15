@@ -1,6 +1,7 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
   overflow: hidden;
+  box-sizing: inherit;
 }
 
 body {
@@ -19,16 +20,17 @@ h1, h2, h3, p {
   background-image: url("images/en.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
   background-position: center center;
 }
 
 .header {
+  position: absolute;
   z-index: 2;
-  min-height: 100vh;
   display: grid;
+  height: 100vh;
   grid-template-columns: 3fr 1fr 0.5fr;
-  align-items: center;
+  align-content: center;
 }
 
 .title {
@@ -39,6 +41,7 @@ h1, h2, h3, p {
   color: #333;
   min-width: 650px;
   justify-items: center;
+  align-items: center;
   z-index: 2;
 }
 
