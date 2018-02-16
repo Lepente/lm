@@ -1,12 +1,12 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
-  overflow: hidden !important;
 }
 
 body {
   margin: 0;
   color: #333;
   background: #fff;
+  overflow: hidden !important;
 }
 
 h1, h2, h3, p {
