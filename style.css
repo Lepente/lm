@@ -6,7 +6,7 @@ body {
   margin: 0;
   color: #333;
   background: #fff;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 h1, h2, h3, p {
@@ -18,7 +18,7 @@ h1, h2, h3, p {
   background-image: url("images/en.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  max-height: 100vh;
   background-position: center center;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, p {
   position: relative;
   z-index: 2;
   display: grid;
-  height: 100vh;
+  max-height: 100vh;
   grid-template-columns: 3fr 1fr 0.5fr;
   align-content: center;
 }
