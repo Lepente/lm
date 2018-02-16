@@ -1,7 +1,6 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
   overflow: hidden;
-  box-sizing: inherit;
 }
 
 body {
@@ -22,27 +21,27 @@ h1, h2, h3, p {
   background-repeat: no-repeat;
   height: 100vh;
   background-position: center center;
+  display: flex;
+  overflow: hidden;
 }
 
 .header {
-  position: relative;
-  z-index: 2;
+  position: absolute;
   display: grid;
   height: 100vh;
   grid-template-columns: 3fr 1fr 0.5fr;
   align-content: center;
+  z-index: 1;
 }
 
 .title {
-  position: relative;
   top: -5rem;
   display: grid;
   grid-column: 2 / 3;
   color: #333;
-  min-width: 650px;
+  min-width: 600px;
   justify-items: center;
   align-items: center;
-  z-index: 2;
 }
 
 .title h1 {
@@ -70,7 +69,6 @@ h1, h2, h3, p {
   width: 30vw;
   top: 0;
   right: 0;
-  z-index: 1;
   display: grid;
   justify-items: center;
 }
@@ -102,7 +100,7 @@ h1, h2, h3, p {
   grid-gap: 15px;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  bottom: 10px;
+  bottom: 30px;
 }
 
 .icon {
@@ -140,24 +138,25 @@ a:hover {
   .header {
     justify-items: center;
   }
+
   .title {
     grid-column: 1 / -1;
   }
+
   .title h1 {
     font-size: 40px !important;
   }
 
   .nav {
-    font-size: 20px;
+    font-size: 25px;
     height: 35px;
-    min-width: 85vw;
+    width: 85vw;
     bottom: 0;
-
     grid-template-columns: repeat(2,1fr);
   }
 
   .block2 {
-    width: 15vw;
+    max-width: 15vw;
   }
 
   .about {
@@ -166,13 +165,13 @@ a:hover {
 
   .projects {
     grid-column: 2 / -1;
-    padding-right: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .header {
     justify-items: center;
+    z-index: 2;
   }
   .title {
     grid-column: 1 / -1;
@@ -186,10 +185,10 @@ a:hover {
   }
 
   .nav {
-    font-size: 25px;
-    height: 40px;
-    min-width: 80vw;
-    bottom: 0;
+    font-size: 35px;
+    height: 35px;
+    bottom: 0 !important;
+    z-index: 0;
     grid-template-columns: repeat(2,1fr);
   }
 
@@ -199,10 +198,12 @@ a:hover {
 
   .projects {
     grid-column: 2 / -1;
+    padding-right: 1rem;
   }
 
   .block2 {
     width: 20vw;
+    z-index: 1;
   }
 }
 
