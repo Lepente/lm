@@ -1,6 +1,8 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
   overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 body {
