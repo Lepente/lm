@@ -82,8 +82,8 @@ h1, h2, h3, p {
   position: absolute;
   min-width: 70vw;
   background: #fff;
-  height: 50px;
-  font-size: 25px;
+  height: 30px;
+  font-size: 20px;
   align-items: center;
   justify-items: center;
 }
