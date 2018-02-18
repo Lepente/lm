@@ -83,8 +83,8 @@ h1, h2, h3, p {
   position: absolute;
   min-width: 70vw;
   background: #fff;
-  height: 30px;
-  font-size: 20px;
+  height: 40px;
+  font-size: 30px;
   align-items: center;
   justify-items: center;
 }
@@ -138,12 +138,19 @@ a:hover {
 }
 
 @media (max-width: 575.95px) {
+  .landing-image {
+    background: url("images/smallen.png");
+    background-position: right top;
+  }
+
   .header {
     justify-items: center;
   }
 
   .title {
+    position: relative;
     grid-column: 1 / -1;
+    bottom: 5rem;
   }
 
   .title h1 {
