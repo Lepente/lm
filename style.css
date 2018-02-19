@@ -20,6 +20,7 @@ h1, h2, h3, p {
   background-position: center center;
   background-size: cover;
   margin: 0;
+  overflow: hidden;
 }
 
 .header {
@@ -164,6 +165,9 @@ a:hover {
 
   .nav {
     width: 100%;
+    bottom: 0;
+    height: 3rem;
+    font-size: 10px;
   }
 
   .title {
