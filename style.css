@@ -115,6 +115,10 @@ a:hover {
 }
 
 @media (max-width: 991px) {
+    * {
+      overflow: auto;
+    }
+
     .title {
       font-size: 30px;
     }
