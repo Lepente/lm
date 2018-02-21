@@ -1,6 +1,14 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
   overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 body {
@@ -51,7 +59,7 @@ h1, h2, h3, p {
   left: 0;
   top: 0;
   width: 10%;
-  height: 100vh;
+  height: 100%;
   background: #56CCF2;
 }
 
@@ -59,7 +67,7 @@ h1, h2, h3, p {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   background: #56CCF2;
   width: 30%;
   display: grid;
