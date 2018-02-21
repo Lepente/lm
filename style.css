@@ -1,14 +1,6 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
   overflow: hidden;
-  padding: 0 !important;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
 }
 
 body {
@@ -33,8 +25,8 @@ h1, h2, h3, p {
 .header {
   position: absolute;
   display: grid;
-  height: 100vh;
-  grid-template-columns: 3fr minmax(600px, 1fr) 0.6fr;
+  height: 100%;
+  grid-template-columns: 3fr minmax(550px, 1fr) 0.6fr;
   align-content: center;
   justify-content: center;
   width: 100vw;
@@ -156,7 +148,7 @@ a:hover {
 @media (max-width: 575px) {
 
   .landing-image {
-    height: 95vh;
+    height: 100%;
   }
 
   .block2 {
