@@ -22,7 +22,7 @@ body {
   background: url("images/en.png");
   background-position: center center;
   background-size: cover;
-  height: 100%;
+  height: 50vh;
   top: 0px;
   left: 0px;
   grid-column: 2 / 3;
