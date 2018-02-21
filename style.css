@@ -17,10 +17,9 @@ h1, h2, h3, p {
   position: relative;
   height: 100vh;
   background: url("images/en.png");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   margin: 0;
-  overflow: hidden;
 }
 
 .header {
@@ -169,7 +168,10 @@ a:hover {
     width: 100%;
     bottom: 0;
     height: 3rem;
-    font-size: 10px;
+  }
+
+  a {
+    font-size: 15px;
   }
 
   .title {
