@@ -159,8 +159,8 @@ h1 {
 
   @media (max-width: 991px) {
 
-    .icon {
-
+    * {
+      overflow: scroll;
     }
 
     .block {
