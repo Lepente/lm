@@ -178,6 +178,10 @@ h1 {
     .footer {
       z-index: 2;
     }
+
+    .content {
+      grid-template-columns: 0.7fr minmax(400px, 1fr) 2fr;
+    }
   }
 
   @media (max-width: 767px) {
@@ -185,9 +189,18 @@ h1 {
       z-index: 1;
     }
 
+    .icon {
+      justify-self: end;
+      margin-right: 1rem;
+    }
+
     .title {
       text-align: center;
       padding-left: 0;
+    }
+
+    .title h1 {
+      font-size: 20px;
     }
 
     .block {
