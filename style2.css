@@ -166,6 +166,7 @@ h1 {
       right: 70px;
       bottom: 30px;
       width: 250px;
+      z-index: -2;
     }
 
     .block2 {
@@ -173,6 +174,7 @@ h1 {
       right: 200px;
       bottom: 30px;
       width: 250px;
+      z-index: -2;
     }
 
     .footer {
@@ -202,6 +204,14 @@ h1 {
       right: 50px;
       bottom: 40px;
       width: 150px;
+    }
+
+    .bar {
+      height: 5vh;
+    }
+
+    .footer {
+      bottom:
     }
   }
 
@@ -261,7 +271,7 @@ h1 {
     }
 
     .footer {
-      bottom: 43px;
+      bottom: 5vh;
     }
 
     .footer h2 {
