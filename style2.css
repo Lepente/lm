@@ -159,6 +159,10 @@ h1 {
 
   @media (max-width: 991px) {
 
+    .icon {
+
+    }
+
     .block {
       height: 250px;
       right: 70px;
@@ -177,6 +181,11 @@ h1 {
 
     .footer {
       z-index: 2;
+    }
+
+    .icon {
+      justify-self: end;
+      margin-right: 1rem;
     }
 
     .content {
@@ -219,10 +228,6 @@ h1 {
 
     .bar {
       height: 5vh;
-    }
-
-    .footer {
-      bottom:
     }
   }
 
