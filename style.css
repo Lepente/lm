@@ -17,7 +17,7 @@ h1, h2, h3, p {
   position: relative;
   height: 100%;
   background: url("images/en.png");
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   margin: 0;
 }
@@ -26,7 +26,7 @@ h1, h2, h3, p {
   position: absolute;
   display: grid;
   height: 100%;
-  grid-template-columns: 3fr minmax(550px, 1fr) 0.6fr;
+  grid-template-columns: 3fr minmax(600px, 1fr) 0.6fr;
   align-content: center;
   justify-content: center;
   width: 100vw;
