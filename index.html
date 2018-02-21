@@ -9,73 +9,16 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
-    <div class="block"></div>
-    <div class="landing-image">
-      <div class="header">
-        <div class="title">
-          <h1>Levente Molnar</h1>
-          <p>Web Designer</p>
-          <section>Hello, my name is Levente Molnar. I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites.</section>
-        </div>
+    <div class="page">
+      <div class="block"></div>
+      <div class="back"></div>
+      <div class="block2"></div>
     </div>
-    </div>
-    <div class="block2">
-      <div class="icons">
-          <div class="icon"><img class="icon" src="images/behance.png" alt="Behance profile"></div>
-          <div class="icon"><img class="icon" src="images/linkedin.png" alt="Linkedin profile"></div>
-      </div>
-    </div>
-
     <div class="nav">
       <a class="about" href="about.html">ABOUT</a>
-      <a class="projects" href="projects.html">WORK</a>
+      <a class="work" href="work.html">WORK</a>
+      <div class="icon"><img class="icon" src="images/behance.png" alt="Behance profile"></div>
+      <div class="icon"><img class="icon" src="images/linkedin.png" alt="Linkedin profile"></div>
     </div>
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function(){
-
-          window.sr = ScrollReveal ({
-            reset:false
-          });
-
-          sr.reveal('.nav', {
-            duration: 1000,
-            origin: 'bottom',
-            distance: '100px',
-            mobile: true,
-          });
-
-          sr.reveal('.title', {
-            duration: 1500,
-            origin: 'right',
-            distance: '400px',
-            mobile: true,
-          });
-
-          sr.reveal('.block2', {
-            duration: 800,
-            scale: 1,
-            origin: 'right',
-            easing: 'linear',
-            distance: '400px',
-            mobile: true,
-          });
-
-          sr.reveal('.block', {
-            duration: 800,
-            scale: 1,
-            origin: 'left',
-            easing: 'linear',
-            distance: '400px',
-            mobile: true,
-          });
-
-      });
-    </script>
-
   </body>
 </html>
