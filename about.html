@@ -11,6 +11,7 @@
   </head>
   <body>
       <div class="nav">
+
         <a class="link" href="index.html">HOME</a>
         <a class="link" href="work.html">WORK</a>
       </div>
@@ -22,7 +23,58 @@
         <section>
           Hello, my name is Levente Molnar. I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites.
         </section>
-
+        <section>
+          I'm focusing on making awesome looking websites which create an excellent experience for the user.
+        </section>
+        <section>
+          In my free time I'm all about to learn new things in design and to develop myself.
+        </section>
+        <section>
+          Avoiding the frustrating feeling when using a website and creating a joyful experience is the best for your business, and I'm here to help you.
+        </section>
       </div>
+
+      <div class="title2"><h2>Contact Me</h2></div>
+      <div class="email"><p>molnar.levente773@gmail.com</p></div>
+
+      <script
+      			  src="https://code.jquery.com/jquery-3.3.1.js"
+      			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      			  crossorigin="anonymous">
+      </script>
+      
+      <script>
+          $(document).ready(function(){
+
+            window.sr = ScrollReveal ({
+              reset:false
+            });
+
+            sr.reveal('.nav', {
+              duration: 1500,
+              origin: 'top',
+              scale: 1,
+              distance: '100px',
+              mobile: true,
+            });
+
+            sr.reveal('.content,.title', {
+              duration: 1500,
+              origin: 'left',
+              scale: 1,
+              distance: '500px',
+              mobile: true,
+            });
+
+            sr.reveal('.img-holder', {
+              duration: 1500,
+              origin: 'bottom',
+              scale: 1,
+              distance: '200px',
+              mobile: true,
+            });
+
+          });
+      </script>
   </body>
 </html>

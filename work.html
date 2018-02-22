@@ -17,10 +17,52 @@
 
     <div class="title"><h1>My work</h1></div>
 
+    <div class="headline"><h2>Lensation Crew's Landing Page</h2></div>
+
     <div class="holder-work">
       <div class="project">
-        <a href="https://lepente.github.io/crew"><img src="images/project.jpg" alt="Lensation Crew project"></a>
+        <a class="proji" href="https://lepente.github.io/crew"><img src="images/project.jpg" alt="Lensation Crew project"></a>
       </div>
     </div>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+          window.sr = ScrollReveal ({
+            reset:false
+          });
+
+          sr.reveal('.nav', {
+            duration: 1500,
+            origin: 'top',
+            scale: 1,
+            distance: '100px',
+            mobile: true,
+          });
+
+          sr.reveal('.headline,.title', {
+            duration: 1500,
+            origin: 'top',
+            scale: 1,
+            distance: '200px',
+            mobile: true,
+          });
+
+          sr.reveal('.holder-work', {
+            duration: 1500,
+            origin: 'bottom',
+            scale: 1,
+            distance: '200px',
+            mobile: true,
+          });
+
+        });
+    </script>
+
   </body>
 </html>

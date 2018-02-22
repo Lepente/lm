@@ -35,21 +35,29 @@ a:hover {
   text-align: center;
 }
 
+.headline {
+  text-align: center;
+}
+
 .title h1 {
   font-size: 55px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .holder-work {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 img {
-  max-width: 93%;
-  height: auto;
+  max-width: 100%;
+}
+
+.proji {
+  padding: 0;
 }
 
 .project {

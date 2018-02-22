@@ -22,5 +22,37 @@
         Hello, my name is Levente Molnar. I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites.
       </section>
     </div>
+
+    <script
+    			  src="https://code.jquery.com/jquery-3.3.1.js"
+    			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    			  crossorigin="anonymous">
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+
+          window.sr = ScrollReveal ({
+            reset:false
+          });
+
+          sr.reveal('.nav', {
+            duration: 1500,
+            origin: 'top',
+            scale: 1,
+            distance: '100px',
+            mobile: true,
+          });
+
+          sr.reveal('.content', {
+            duration: 1500,
+            origin: 'right',
+            scale: 1,
+            distance: '500px',
+            mobile: true,
+          });
+
+        });
+    </script>
   </body>
 </html>
