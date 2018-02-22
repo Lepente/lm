@@ -107,7 +107,6 @@ h1 {
       grid-template-columns: 0.7fr minmax(150px, 1fr) 2fr;
       font-size: 23px;
       padding-top: 0;
-      padding-left: 1rem;
     }
 
     .content section {
