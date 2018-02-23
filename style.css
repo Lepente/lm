@@ -24,6 +24,7 @@ body {
   width: 100vw;
   z-index: 1;
   bottom: 7vh;
+  line-height: 1.5;
 }
 
 .content {
@@ -53,6 +54,7 @@ body {
 
 .content p {
   grid-column: 1 /2;
+  margin-top: 0;
 }
 
 .content section {
