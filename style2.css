@@ -68,7 +68,7 @@ h1 {
   .content {
     display: grid;
     position: relative;
-    grid-template-columns: 0.7fr minmax(570px, 1fr) 2fr;
+    grid-template-columns: 0.7fr minmax(570px, 1.8fr) 1.5fr;
     padding-top: 2rem;
     font-size: 35px;
     font-weight: 100;
@@ -79,6 +79,7 @@ h1 {
 
   .content section {
     grid-column: 2 / 3;
+    color: #585858;
   }
 
   .img-holder {

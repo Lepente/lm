@@ -28,8 +28,8 @@ body {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 0.2fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr;
   position: absolute;
   right: 0;
   top: 0;
@@ -41,7 +41,7 @@ body {
   background: url("images/shapes.png");
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 25vh;
+  padding-top: 30vh;
   z-index: 0;
 }
 
@@ -58,9 +58,26 @@ body {
 
 .content section {
   align-self: flex-start;
+  line-height: 1.2;
+  color: #585858;
+  text-align: center;
   grid-column: 1 /2;
   padding: 0 8rem 0 8rem;
   font-size: 30px;
+  font-weight: lighter;
+}
+
+button {
+  align-self: flex-start;
+  background: white;
+  border: 1px solid #333;
+  margin: 1.5rem;
+  color: #333;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  font-size: 20px;
 }
 
 .link {
