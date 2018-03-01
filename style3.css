@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   color: #333;
 }
 
@@ -39,6 +39,10 @@ a:hover {
   text-align: center;
 }
 
+.headline h2 {
+  font-weight: lighter;
+}
+
 .title h1 {
   font-size: 55px;
   margin-bottom: 2rem;
@@ -74,10 +78,10 @@ img {
 }
 
 .project:hover img{
-  -webkit-transform: scale3d(1.2, 1.2, 1);
-          transform: scale3d(1.2, 1.2, 1);
+  -webkit-transform: scale3d(1.05, 1.05, 1);
+          transform: scale3d(1.05, 1.05, 1);
 
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 @media (max-width: 575px) {
