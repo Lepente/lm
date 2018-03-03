@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   overflow: hidden;
   color: #333;
+  border-top: 4px solid #F2C94C;
 }
 
 .nav {
@@ -13,6 +14,7 @@ body {
   align-items: center;
   margin-right: 5rem;
   z-index: 3;
+
 }
 
 .landing-image {
