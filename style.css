@@ -131,6 +131,16 @@ a:hover {
   .content h1 {
     font-size: 30px;
   }
+
+  .img-holder {
+    bottom: -1rem;
+  }
+
+  .shapes {
+    height: 60vh;
+    width: 60vh;
+    bottom: 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -147,9 +157,13 @@ a:hover {
   }
 
   .img-holder {
-    right: 30vh;
-    height: 100%;
-    width: 100%;
+    right: 0;
+    bottom: -1rem;
+  }
+
+  .shapes {
+    height: 60vh;
+    width: 60vh;
   }
 
   .content {
