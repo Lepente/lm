@@ -143,6 +143,10 @@ a:hover {
     width: 60vh;
     bottom: 0;
   }
+
+  .button {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -159,13 +163,7 @@ a:hover {
   }
 
   .img-holder {
-    right: 0;
-    bottom: -5rem;
-  }
-
-  .shapes {
-    height: 60vh;
-    width: 60vh;
+    display: none;
   }
 
   .content {
