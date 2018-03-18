@@ -133,6 +133,7 @@ h1 {
   }
 
   .project:hover .overlay {
+    cursor: pointer;
     opacity: 1;
   }
 
