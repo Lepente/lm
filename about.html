@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <title>Levente Molnar</title>
@@ -12,13 +11,12 @@
       <div class="nav">
 
         <a class="link" href="index.html">HOME</a>
-        <a class="link" href="work.html">WORK</a>
-      </div>
-    <div class="title"><h1>About Me</h1></div>
 
-    <div class="img-holder"></div>
+      </div>
 
       <div class="content">
+        <div class="column">
+          <h1>About</h1>
         <section>
           Hello, my name is Levente Molnar. I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites.
         </section>
@@ -32,9 +30,32 @@
           Avoiding the frustrating feeling when using a website and creating a joyful experience is the best for your business, and I'm here to help you.
         </section>
       </div>
+      </div>
 
-      <div class="title2"><h2>Contact Me</h2></div>
-      <div class="email"><p>molnar.levente773@gmail.com</p></div>
+      <div class="title"><h1>Work</h1></div>
+
+      <div class="holder-work">
+        <div class="project">
+          <a target="_blank" href="https://lepente.github.io/crew"><img class="img-fluid"src="images/project.jpg" alt="Lensation Crew project"></a>
+          <div class="overlay">
+          <a target="_blank" href="https://lepente.github.io/crew"><h2 class="info">Lensation Crew</h2></a> 
+        </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="text-block">
+          <div class="col">
+              <h3>CONTACT:</h3>
+              <p>molnar.levente773@gmail.com</p>
+              <div class="icons-footer">
+              <a target="_blank" href="https://www.behance.net/molnarleve164f"><img class="icon" src="images/behance.svg" alt="Behance Link"></a>
+              <a target="_blank" href="https://dribbble.com/Lepente"><img class="icon" src="images/dribbble.svg" alt="Dribbble Link"></a>
+              <a target="_blank" href="https://www.linkedin.com/in/levente-molnar-324339131/"><img class="icon" src="images/linkedin.svg" alt="LinkedIn Link"></a>
+              </div>
+              <p>All Rights Reserved.</p>
+          </div>
+      </footer>
 
       <script
       			  src="https://code.jquery.com/jquery-3.3.1.js"
@@ -50,26 +71,33 @@
             });
 
             sr.reveal('.nav', {
-              duration: 1500,
+              duration: 1000,
+              origin: 'top',
+              scale: 1,
+              distance: '50px',
+              mobile: true,
+            });
+
+            sr.reveal('.content,.title', {
+              duration: 1000,
               origin: 'top',
               scale: 1,
               distance: '100px',
               mobile: true,
             });
 
-            sr.reveal('.content,.title', {
+            sr.reveal('.holder-work', {
               duration: 1000,
-              origin: 'left',
+              origin: 'top',
               scale: 1,
-              distance: '500px',
+              distance: '100px',
               mobile: true,
             });
 
-            sr.reveal('.img-holder', {
-              duration: 1500,
+            sr.reveal('footer', {
+              duration: 1000,
               origin: 'bottom',
               scale: 1,
-              distance: '200px',
               mobile: true,
             });
 
