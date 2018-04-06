@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -8,77 +8,53 @@
     <title>Levente Molnar</title>
   </head>
   <body>
-      <div class="nav">
+    <div class="navbar" id="myNavbar">
+      <a href="#about" class="active">About</a>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
-        <a class="link" href="index.html">HOME</a>
-
-      </div>
-
-      <div class="content">
-        <div class="column">
-          <h1>About</h1>
-        <section>
-          Hello, my name is Levente Molnar. I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites.
-        </section>
-        <section>
-          I'm focusing on making awesome looking websites which create an excellent experience for the user.
-        </section>
-        <section>
-          In my free time I'm all about to learn new things in design and to develop myself.
-        </section>
-        <section>
-          Avoiding the frustrating feeling when using a website and creating a joyful experience is the best for your business, and I'm here to help you.
-        </section>
-      </div>
-      </div>
-
-      <div class="title"><h1>Work</h1></div>
-
-      <div class="holder-work">
-        <div class="project">
-          <a target="_blank" href="https://lepente.github.io/crew"><img class="img-fluid"src="images/project.jpg" alt="Lensation Crew project"></a>
-          <div class="overlay">
-          <a target="_blank" href="https://lepente.github.io/crew"><h2 class="info">Lensation Crew</h2></a>
-        </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="text-block">
-          <div class="col">
-              <h3>CONTACT:</h3>
-              <p>molnar.levente773@gmail.com</p>
-              <div class="icons-footer">
-              <a target="_blank" href="https://www.behance.net/molnarleve164f"><img class="icon" src="images/behance.svg" alt="Behance Link"></a>
-              <a target="_blank" href="https://dribbble.com/Lepente"><img class="icon" src="images/dribbble.svg" alt="Dribbble Link"></a>
-              <a target="_blank" href="https://www.linkedin.com/in/levente-molnar-324339131/"><img class="icon" src="images/linkedin.svg" alt="LinkedIn Link"></a>
-              </div>
-              <p>All Rights Reserved.</p>
+      <div class="text-wrapper">
+        <h1>Levente Molnar</h1>
+          <p>UX designer</p>
+          <span>I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites. </span>
+          <span>I'm focusing on making awesome looking websites which create an excellent experience for the user. </span>
+          <span>In my free time I'm all about to learn new things in design and to develop myself. </span>
+          <span>Avoiding the frustrating feeling when using a website and creating a joyful experience is the best for your business, and I'm here to help you. </span>
+          <h2 id="contact">Drop me a line</h2>
+          <span>molnar.levente773@gmail.com</span>
+          <div class="icons">
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/behance.svg" alt="Behance"></a>
+            <a href="#"><img src="images/dribbble.svg" alt="Dribbble"></a>
           </div>
-      </footer>
+          <div class="box">
+            <div class="white-box"></div>
+          </div>
+      </div>
 
-      <script
-      			  src="https://code.jquery.com/jquery-3.3.1.js"
-      			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      			  crossorigin="anonymous">
-      </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    </script>
 
-      <script>
-          $(document).ready(function(){
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
 
-            window.sr = ScrollReveal ({
+
+        $(document).ready(function(){
+
+            window.sr = ScrollReveal({
               reset:false
             });
 
-            sr.reveal('.nav', {
-              duration: 1000,
-              origin: 'top',
-              scale: 1,
-              distance: '50px',
-              mobile: true,
-            });
-
-            sr.reveal('.content,.title', {
+            sr.reveal('.navbar', {
               duration: 1000,
               origin: 'top',
               scale: 1,
@@ -86,15 +62,37 @@
               mobile: true,
             });
 
-            sr.reveal('.holder-work', {
+            sr.reveal('h1,p,span,h2,.icons', {
               duration: 1000,
-              origin: 'top',
+              origin: 'left',
               scale: 1,
               distance: '100px',
               mobile: true,
             });
 
-          });
-      </script>
+        });
+
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
   </body>
 </html>

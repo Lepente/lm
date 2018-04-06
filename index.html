@@ -1,67 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Levente Molnar</title>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
-  <body>
-    <div class="nav">
-      <a class="link" href="about.html">ABOUT</a>
-    </div>
+<body>
 
-    <div class="main">
-    <div class="landing-image"></div>
-    <div class="content">
-      <h1>Levente Molnar</h1>
-      <p>Web Designer</p>
-      <section>
-        I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites.
-      </section>
-      <a class="button" href="about.html">EXPLORE</a>
+<div class="navbar" id="myNavbar">
+  <a href="#home" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="header">
+  <div class="text-wrapper">
+    <h1>Levente
+      Molnar</h1>
+      <p>UX designer</p>
+      <span>I'm a freelance web designer from Romania. My passion and hobby is designing magnificent websites. </span>
+      <div class="cta-button">
+        <a href="about.html">Read More</a>
+      </div>
+      <p class="scroll">Scroll down</p>
+  </div>
+  <div class="image-holder">
+    <div class="back-box"></div>
+    <img id="prof" src="images/en.png" alt="Profile pic">
+    <div class="front-box"></div>
+  </div>
+</div>
+
+  <div class="title"><h1>Projects</h1></div>
+
+<div class="work-holder">
+  <div class="project-wrapper">
+    <div class="project-img">
+      <img src="images/project.jpg" alt="Lensation Crew">
+    </div>
+    <div class="project-info">
+      <h2>Lensation Crew - Website</h2>
+      <a href="">View Project</a>
     </div>
   </div>
+</div>
 
-        <script
-    			  src="https://code.jquery.com/jquery-3.3.1.js"
-    			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    			  crossorigin="anonymous">
-    </script>
+<div id="contact" class="contact">
+  <h2>Drop me a line</h2>
+  <p>molnar.levente773@gmail.com</p>
+  <div class="icons">
+    <a href="#"><img class="ikon" src="images/linkedin.svg" alt="LinkedIn"></a>
+    <a href="#"><img class="ikon" src="images/behance.svg" alt="Behance"></a>
+    <a href="#"><img class="ikon" src="images/dribbble.svg" alt="Dribbble"></a>
+  </div>
+</div>
 
-    <script>
-        $(document).ready(function(){
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</script>
 
-          window.sr = ScrollReveal ({
-            reset:false
-          });
+<script>
+    function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
 
-          sr.reveal('.nav', {
-            duration: 1500,
-            origin: 'top',
-            scale: 1,
-            distance: '100px',
-            mobile: true,
-          });
 
-          sr.reveal('.content', {
-            duration: 1500,
-            origin: 'right',
-            scale: 1,
-            distance: '500px',
-            mobile: true,
-          });
+    $(document).ready(function(){
 
-          sr.reveal('.img-holder', {
-            duration: 1500,
-            origin: 'bottom',
-            scale: 1,
-            distance: '200px',
-            mobile: true,
-          });
-
+        window.sr = ScrollReveal({
+          reset:false
         });
-    </script>
-  </body>
+
+        sr.reveal('.navbar', {
+          duration: 1000,
+          origin: 'top',
+          scale: 1,
+          distance: '100px',
+          mobile: true,
+        });
+
+        sr.reveal('.text-wrapper', {
+          duration: 1000,
+          origin: 'left',
+          scale: 1,
+          distance: '100px',
+          mobile: true,
+        });
+
+        sr.reveal('.back-box', {
+          duration: 1000,
+          origin: 'right',
+          scale: 0.1,
+          distance: '100px',
+          mobile: true,
+        });
+
+        sr.reveal('.title', {
+          duration: 1000,
+          origin: 'left',
+          scale: 1,
+          distance: '100px',
+          mobile: true,
+        });
+
+        sr.reveal('.project-wrapper', {
+          duration: 1000,
+          origin: 'top',
+          scale: 1,
+          distance: '100px',
+          mobile: true,
+        });
+
+        sr.reveal('.project-info', {
+          duration: 1000,
+          origin: 'top',
+          scale: 1,
+          distance: '100px',
+          mobile: true,
+        });
+
+        sr.reveal('#prof', {
+          duration: 1000,
+          origin: 'top',
+          scale: 1,
+          distance: '100px',
+          mobile: true,
+        });
+
+    });
+
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script>
+    $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
 </html>
