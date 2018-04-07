@@ -103,7 +103,7 @@ img {
   padding-top: 0.1rem;
   padding-bottom: 3rem;
   font-style: italic;
-  color: #EB5757;
+  color: #66C3FF;
 }
 
 .text-wrapper span {
@@ -113,7 +113,7 @@ img {
 }
 
 .cta-button a {
-  border: 2px solid #EB5757;
+  border: 2px solid #66C3FF;
   font-size: 26px;
   color: #333;
   text-decoration: none;
@@ -129,7 +129,7 @@ img {
 
 .cta-button a:hover {
   color: #fff;
-  background: #EB5757;
+  background: #66C3FF;
   transition: 0.5s;
 }
 
@@ -170,7 +170,7 @@ h1, p {
   height: 80%;
   top: 20%;
   border-top-left-radius: 100px;
-  background-color: #EB5757;
+  background-color: #66C3FF;
 }
 
 /*  --- -- - ---- WORK SECTION -- --------*/
@@ -205,7 +205,7 @@ h1, p {
   color: #000;
   font-size: 30px;
   font-weight: bold;
-  text-decoration-color: #EB5757;
+  text-decoration-color: #66C3FF;
 }
 
 .project-info h2 {
@@ -224,7 +224,7 @@ h1, p {
 
 .contact h2 {
   font-size: 40px;
-  color: #EB5757;
+  color: #66C3FF;
   margin-bottom: 1rem;
 }
 
