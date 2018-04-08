@@ -195,10 +195,17 @@ h1, p {
 
 .project-wrapper {
   grid-column: 2 / 3;
+  transition: 1s;
+}
+
+.project-wrapper:hover .project-img img{
+  box-shadow: 0 20px 100px hsla(0,0%,0%,0.5);
+  transition: 0.3s;
 }
 
 .project-img img {
   box-shadow: 0 10px 100px hsla(0,0%,0%,0.3);
+  transition: 0.3s;
 }
 
 .project-info a {
@@ -215,35 +222,13 @@ h1, p {
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: 0.5fr 2.5fr 0.5fr;
-  margin-bottom: 3rem;
-  display: grid;
-  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5rem;
 }
 
-.contact h2 {
-  font-size: 40px;
-  color: #66C3FF;
-  margin-bottom: 1rem;
+.copy {
+  text-align: center;
 }
-
-.contact p {
-  font-size: 33px;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.ikon {
-  height: 42px;
-  width: 42px;
-  padding: 1rem;
-}
-
-.contact h2,.contact p,.icons {
-  grid-column: 2 / 3;
-}
-
 /* -------------------- MEDIA QUERIES -----------------------*/
 
 

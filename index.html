@@ -12,7 +12,7 @@
 <div class="navbar" id="myNavbar">
   <a href="#home" class="active">Home</a>
   <a href="about.html">About</a>
-  <a href="#contact">Contact</a>
+  <a href="contact.html">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
@@ -39,23 +39,21 @@
 <div class="work-holder">
   <div class="project-wrapper">
     <div class="project-img">
-      <img src="images/project.jpg" alt="Lensation Crew">
+      <a href="https://lepente.github.io/crew/"><img src="images/project.png" alt="Lensation Crew"></a>
     </div>
     <div class="project-info">
       <h2>Lensation Crew - Website</h2>
-      <a href="">View Project</a>
+      <a href="https://lepente.github.io/crew/">View Project</a>
     </div>
   </div>
 </div>
 
-<div id="contact" class="contact">
-  <h2>Drop me a line</h2>
-  <p>molnar.levente773@gmail.com</p>
-  <div class="icons">
-    <a href="#"><img class="ikon" src="images/linkedin.svg" alt="LinkedIn"></a>
-    <a href="#"><img class="ikon" src="images/behance.svg" alt="Behance"></a>
-    <a href="#"><img class="ikon" src="images/dribbble.svg" alt="Dribbble"></a>
-  </div>
+<div class="cta-button contact">
+  <a href="contact.html">Get in touch</a>
+</div>
+
+<div class="copy">
+  <p>&copy; 2018 Levente Molnar</p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -112,9 +110,10 @@
 
         sr.reveal('.project-wrapper', {
           duration: 1000,
+          easing: 'ease-in-out',
           origin: 'top',
           scale: 1,
-          distance: '100px',
+          distance: '50px',
           mobile: true,
         });
 
