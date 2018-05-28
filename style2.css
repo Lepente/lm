@@ -1,10 +1,15 @@
+* {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     color: #404040;
+    overflow: hidden
 }
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 navbar {
