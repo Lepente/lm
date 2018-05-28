@@ -16,6 +16,10 @@ navbar {
     top: 0;
 }
 
+.all {
+    overflow-x: hidden;
+}
+
 ul {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
