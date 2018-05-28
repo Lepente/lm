@@ -2,11 +2,11 @@
 body {
     margin: 0;
     color: #404040;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 navbar {
