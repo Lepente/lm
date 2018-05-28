@@ -67,6 +67,7 @@ a {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 0;
     box-shadow: 0 2px 100px hsla(0, 0%, 0%, 0.15);
+    overflow: hidden;
 }
 
 /* ----------------- HEADER ---------------------- */
