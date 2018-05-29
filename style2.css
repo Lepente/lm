@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    color: #404040;
+    color: #333;
     overflow-x: hidden;
 }
 
@@ -33,6 +33,7 @@ ul {
 
 #work {
     border-bottom: solid 3px #FECE02;
+    font-size: 2vw;
 }
 
 a {
@@ -111,6 +112,7 @@ img {
 #title {
     text-decoration: underline;
     text-decoration-color: #FECE02;
+    font-size: 3vw;
 }
 
 .text-title {
@@ -121,16 +123,50 @@ img {
 .icons {
     display: grid;
     display: inline-flex;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat (4, auto);
     grid-template-rows: 1fr;
     grid-column: 4 / 5;
+    justify-items: center;
+}
+
+i {
+    margin-top: 1rem;
+    font-size: 40px;
+    margin-bottom: 3rem;
+}
+
+.fab {
+    transition: .5s;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+    transition: .2s;
+}
+
+.fa-dribbble:hover {
+    color: #EA4C89;
+    transition: .2s;
+}
+
+.fa-behance:hover {
+    color: #1769FF;
+    transition: .2s;
+}
+
+.fa-address-card:hover {
+    color: #005FEB;
+    transition: .2;
+}
+
+.far {
+    transition: .5s;
 }
 
 .icon {
-    width: 40%;
-    height: 40%;
-    margin-top: 2rem;
+    margin-right: 2rem;
 }
+
 
 .content {
     grid-column: 3 / 4;
@@ -140,6 +176,13 @@ img {
     margin-top: 0;
 }
 
+.copy {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 767px) {
     header {

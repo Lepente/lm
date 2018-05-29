@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    color: #404040;
+    color: #333;
     overflow-x: hidden;
 }
 
@@ -29,11 +29,12 @@ ul {
     align-items: center;
     font-weight: 600;
     padding: 0;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 #work {
     border-bottom: solid 3px #005bea;
+    font-size: 2vw;
 }
 
 a {
@@ -61,11 +62,8 @@ a {
     width: 45vw;
     border-radius: 10000px;
     background: #F7971E;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFD200, #F7971E);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 0;
     box-shadow: 0 2px 100px hsla(0, 0%, 0%, 0.15);
     overflow: hidden;
@@ -118,15 +116,47 @@ img {
 .icons {
     display: grid;
     display: inline-flex;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat (4, auto);
     grid-template-rows: 1fr;
     grid-column: 4 / 5;
 }
 
+i {
+    margin-top: 2.3rem;
+    font-size: 32px;
+
+}
+
+.fab {
+    transition: .5s;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+    transition: .2s;
+}
+
+.fa-dribbble:hover {
+    color: #EA4C89;
+    transition: .2s;
+}
+
+.fa-behance:hover {
+    color: #1769FF;
+    transition: .2s;
+}
+
+.fa-address-card:hover {
+    color: #005FEB;
+    transition: .2;
+}
+
+.far {
+    transition: .5s;
+}
+
 .icon {
-    width: 40%;
-    height: 40%;
-    margin-top: 2rem;
+    margin-right: 2rem;
 }
 
 /* ---------------- MAIN - PROJECTS ---------------- */
@@ -140,7 +170,15 @@ main {
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 3vw;
+}
+
+.copy {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 767px) {
