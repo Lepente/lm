@@ -122,12 +122,10 @@ img {
 
 .icons {
     display: grid;
-    display: inline-flex;
-    grid-template-columns: repeat (4, auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: 1fr;
     grid-column: 4 / 5;
-    justify-items: center;
-    text-align: center;
+    justify-self: center;
 }
 
 i {
@@ -166,13 +164,17 @@ i {
 
 .icon {
     margin-right: 1rem;
-    margin-left: 1.2rem;
+    margin-left: 1rem;
     justify-self: center;
+    position: relative;
+    text-align: center;
 }
 
 
 .content {
+    position: relative;
     grid-column: 3 / 4;
+    justify-items: center;
 }
 
 .content p {

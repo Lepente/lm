@@ -111,20 +111,21 @@ img {
     grid-column: 4 / 5;
     padding-left: 2.5rem;
     align-self: center;
+    justify-items: center;
+    position: relative;
 }
 
 .icons {
     display: grid;
-    display: inline-flex;
-    grid-template-columns: repeat (4, auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: 1fr;
     grid-column: 4 / 5;
+    justify-self: center;
 }
 
 i {
     margin-top: 2.3rem;
     font-size: 32px;
-
 }
 
 .fab {
@@ -156,7 +157,11 @@ i {
 }
 
 .icon {
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    justify-self: center;
+    position: relative;
+    text-align: center;
 }
 
 /* ---------------- MAIN - PROJECTS ---------------- */
