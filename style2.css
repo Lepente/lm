@@ -33,7 +33,7 @@ ul {
 
 #work {
     border-bottom: solid 3px #FECE02;
-    font-size: 2vw;
+    font-size: 36px;
 }
 
 a {
@@ -127,6 +127,7 @@ img {
     grid-template-rows: 1fr;
     grid-column: 4 / 5;
     justify-items: center;
+    text-align: center;
 }
 
 i {
@@ -164,7 +165,9 @@ i {
 }
 
 .icon {
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1.2rem;
+    justify-self: center;
 }
 
 
@@ -182,6 +185,7 @@ i {
     bottom: 0;
     text-align: center;
     margin-bottom: 1rem;
+    color: #707070;
 }
 
 @media (max-width: 767px) {
@@ -190,16 +194,24 @@ i {
         grid-template-columns: .2fr .5fr 1.5fr 1.2fr .2fr;
     }
 
-    .text-title {
-        padding-left: .5rem;
-    }
-
     h1 {
         font-size: 6vw;
     }
 
+    #title {
+        font-size: 5vw;
+    }
+
     p {
         font-size: 3vw;
+    }
+
+    #work {
+        font-size: 28px;
+    }
+
+    ul {
+        font-size: 22px;
     }
 
     .circle2 {
@@ -223,8 +235,16 @@ i {
         max-width: 200px;
     }
 
+    #title {
+        font-size: 9vw;
+    }
+
     p {
         font-size: 6vw;
+    }
+
+    #work {
+        font-size: 28px;
     }
 
     img {
@@ -248,5 +268,9 @@ i {
         width: 100vw;
         top: -50vw;
         left: -50vw;
+    }
+
+    i {
+        font-size: 32px;
     }
 }
