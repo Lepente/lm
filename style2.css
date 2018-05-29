@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
 body {
     margin: 0;
     color: #333;
     overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
 }
 
 html {
@@ -14,6 +16,7 @@ navbar {
     z-index: 2;
     top: 0;
     overflow: hidden;
+    font-family: 'Rubik', sans-serif;
 }
 
 .all {
@@ -26,7 +29,7 @@ ul {
     list-style: none;
     justify-items: center;
     align-items: center;
-    font-weight: 600;
+    font-weight: 400;
     padding: 0;
     font-size: 28px;
 }
@@ -92,15 +95,16 @@ header {
 h1 {
     grid-column: 2 / 3;
     font-size: 4vw;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     z-index: 1;
 }
 
 p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #707070;
+    font-weight: 300;
 }
 
 img {
