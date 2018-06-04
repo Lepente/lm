@@ -305,6 +305,10 @@ footer .cta-btn:hover {
         margin-top: 0;
     }
 
+    h2 {
+        font-size: 8vw;
+    }
+
     .text-title {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
