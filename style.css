@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
 html {
     overflow-x: hidden;
 }
 
 body {
     margin: 0;
-    color: #333;
+    color: #000;
     overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 /* -------------------- NAVBAR ---------------------- */
@@ -28,6 +28,7 @@ ul {
     font-weight: 400;
     padding: 0;
     font-size: 26px;
+    font-family: 'Muli', sans-serif;
 }
 
 #work {
@@ -37,13 +38,13 @@ ul {
 
 a {
     text-decoration: none;
-    color: #404040;
+    color: #000;
 }
 
 .link:after {
     display: block;
     content: '';
-    border-bottom: solid 3px #005bea;
+    border-bottom: solid 3px #00C2FA;
     transform: scaleX(0);
     transition: transform 200ms ease-in-out;
 }
@@ -64,20 +65,20 @@ header {
 h1 {
     grid-column: 2 / 3;
     font-size: 4vw;
-    font-weight: 400;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
 
 p {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #707070;
     font-weight: 300;
 }
 
 #ab-link {
     margin: 0;
-    color: #FECE02;
+    color: #00C2FA;
     font-weight: bold;
 }
 
@@ -159,8 +160,7 @@ main {
 }
 
 h2 {
-    font-size: 2.5vw;
-    font-weight: 400;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -191,6 +191,7 @@ footer p {
     grid-column: 2 / 3;
     max-width: 400px;
     margin: 0;
+    font-size: 1.3vw;
 }
 
 footer .cta-btn {
