@@ -1,63 +1,93 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/proficon.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <title>Levente Molnar Design</title>
+    <title>Levente Molnar | Web Designer | UI/UX</title>
 </head>
 
 <body>
-        <navbar>
+   <img id="background" src="images/cool-background2.svg" alt="Mainbackground">
+    <header>
+        <nav>
             <ul>
-                <a class="link" href="">
-                    <li>LM</li>
-                </a>
-                <a id="work" href="">
-                    <li>Work</li>
-                </a>
-                <a class="link" href="about.html">
-                    <li>About</li>
-                </a>
+                <li id="nav-title">
+                    <h1 id="nav-title">Levente Molnar</h1>            
+                </li>
+                <li><a class="link" href="">About</a></li>
+                <li><a class="link" href="#work">Work</a></li>
+                <li><a id="contact" href="">Contact</a></li>
             </ul>
-        </navbar>
+        </nav>
+        <div class="content">
+           <div class="main-text">
+            <h1>Intuitive design for you</h1>
+            <p>Helping you to grow your business with great design.</p>
+            <a class="cta-btn-start" href="#h2">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-page">
+           <div class="section">
+            <h2 id="h2">Web, app design made with precise decisions</h2>
+            <p id="contact-p">Share your ideas with me via email or twitter, we will work it out together.</p>
+            <a class="cta-btn-start" href="contact.html">Contact me</a>
+            <div class="icons">
+                    <a class="icon" href="https://www.linkedin.com/in/levente-molnar-324339131/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="icon" href="https://www.behance.net/molnarleve164f" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a class="icon" href="https://dribbble.com/Lepente" target="_blank"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="section">
+                <h2 id="work">Projects</h2>
+                <p>Help me expand it :)</p>
+            </div>
 
-        <header>
-            <h1>Levente Molnar</h1>
-            <img src="images/prof.png" alt="Profile pic">
-            <div class="text-title">
-                <h1 id="title">Hello</h1>
-                <p>I'm a freelance designer, my passion and hobby is designing cool products that provide great usability for the user.</p>
-                <a class="link" href="about.html">
-                    <p id="ab-link">Read More</p>
-                </a>
+            <div class="contact-footer section">
+                <h2>Start a project</h2>
+                <p>Feel free to share your project with me if you want to work with me.</p>
+                <a class="cta-btn-start contact" href="">Get in touch</a>
                 <div class="icons">
                     <a class="icon" href="https://www.linkedin.com/in/levente-molnar-324339131/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a class="icon" href="https://www.behance.net/molnarleve164f" target="_blank"><i class="fab fa-behance"></i></a>
                     <a class="icon" href="https://dribbble.com/Lepente" target="_blank"><i class="fab fa-dribbble"></i></a>
-                    <a class="icon" id="contact" href="mailto:molnar.levente773@gmail.com"><i class="far fa-address-card"></i></a>
                 </div>
+                <div class="copy">&copy; 2018 All rights reserved. – Designed & Coded by Levente Molnar</div>
             </div>
+        </div>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-        </header>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-        <main>
-            <div class="tilte-main">
-                <h2>Projects</h2>
-                <p>Help me expand it :)</p>
-            </div>
-        </main>
-     <footer>
-            <section>Let's work together!</section>
-            <h2>Have an idea?</h2>
-            <p>I'm available for work, so if you have something in your mind feel free to message me on <a href="mailto:molnar.levente773@gmail.com"><strong>email</strong></a> or on <a href="https://twitter.com/DriEye"><strong>twitter</strong></a>.</p>
+      // Store hash
+      var hash = this.hash;
 
-            <a class="cta-btn" href="mailto:molnar.levente773@gmail.com">Contact me</a>
-
-            <div class="copy"><section>&copy;2018 All rights reserved. - Designed & Coded by Levente Molnar</section></div>
-        </footer>
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
 </body>
-
 </html>
