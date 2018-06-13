@@ -250,6 +250,10 @@ p {
         display: none;
     }
 
+    header {
+        margin-bottom: 30%;
+    }
+
     li {
         margin-left: 0rem;
     }
@@ -280,7 +284,7 @@ p {
     #background {
         position: absolute;
         width: 150vw;
-        top: -10vw;
+        top: -25vw;
         left: -10vw;
     }
 
