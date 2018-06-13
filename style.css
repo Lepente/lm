@@ -239,6 +239,10 @@ p {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    ul {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 565px) {
@@ -259,7 +263,7 @@ p {
     }
 
     h2 {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     p {
@@ -275,7 +279,7 @@ p {
 
     #background {
         position: absolute;
-        width: 180vw;
+        width: 150vw;
         top: -10vw;
         left: -10vw;
     }
