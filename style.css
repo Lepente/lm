@@ -181,6 +181,12 @@ p {
     max-width: 500px;
 }
 
+.contact-footer {
+    background: #92E2F9;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
 .cta-btn-start {
     padding: .5rem 1rem .5rem 1rem;
     border: 3px solid #27457A;
@@ -213,6 +219,10 @@ p {
 
     .main-text {
         max-width: 80%;
+    }
+
+    .cta-btn-start {
+        font-size: 22px;
     }
 
     h1 {
