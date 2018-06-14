@@ -79,12 +79,12 @@ header {
     display: grid;
     grid-template-columns: .2fr 1fr .2fr;
     grid-template-rows: 1fr;
-    margin-bottom: 20%;
 }
 
 .content {
     display: grid;
     grid-column: 2 / 3;
+    height: 90vh;
 }
 
 .main-text {
@@ -134,8 +134,8 @@ i {
     transition: .2s;
 }
 
-.fa-behance:hover {
-    color: #1769FF;
+.fa-twitter:hover {
+    color: #1DA1F2;
     transition: .2s;
 }
 
