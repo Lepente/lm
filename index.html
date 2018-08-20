@@ -1,93 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/proficon.png" type="image/png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Levente Molnar | Web Designer | UI/UX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="main.js"></script>
 </head>
-
 <body>
-   <img id="background" src="images/cool-background2.svg" alt="Mainbackground">
-    <header>
-        <nav>
-            <ul>
-                <li id="nav-title">
-                    <h1 id="nav-title">Levente Molnar</h1>            
-                </li>
-                <li><a class="link" href="">About</a></li>
-                <li><a class="link" href="#work">Work</a></li>
-                <li><a id="contact" href="">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="content">
-           <div class="main-text">
-            <h1>Intuitive design for you</h1>
-            <p>Helping you to grow your business with great design.</p>
-            <a class="cta-btn-start" href="#h2">Get Started</a>
-            </div>
-        </div>
+    <nav class="animated fadeInDown">
+        <ul>
+            <a href="#about"><li>About</li></a>
+            <a href="#work"><li>Work</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+    
+    <div class="background">
+        <div class="floating"><img class="dots animated fadeIn" src="images/dots.svg" alt="Stars"></div>
+        <img class="planet animated fadeInUp slower" src="images/eclipse.svg" alt="Planet">
+        <img class="dune" src="images/dune.svg" alt="Dune">
+        <img class="planet2" src="images/ellipse.svg" alt="Planet">
+    </div>
+
+    <header class="animated zoomIn slower">
+    <h1>Levente Molnar</h1>
+    <p>Hello, I am a passionate product designer who loves to create intuitive products.</p>
+    <div class="main-btn"><a class="btn-link" href="#work">Discover</a></div>
     </header>
-    <main>
-        <div class="main-page">
-           <div class="section">
-            <h2 id="h2">Web, app design made with precise decisions</h2>
-            <p id="contact-p">Share your ideas with me via email or twitter, we will work it out together.</p>
-            <a class="cta-btn-start" href="contact.html">Contact me</a>
-            <div class="icons">
-                    <a class="icon" href="https://www.linkedin.com/in/levente-molnar-324339131/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="icon" href="https://twitter.com/DriEye" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="icon" href="https://dribbble.com/Lepente" target="_blank"><i class="fab fa-dribbble"></i></a>
-                </div>
-            </div>
-            <div class="section">
-                <h2 id="work">Projects</h2>
-                <p>Help me expand it :)</p>
-            </div>
 
-            <div class="contact-footer section">
-                <h2>Start a project</h2>
-                <p>Feel free to share your project if you want to work with me.</p>
-                <a class="cta-btn-start contact" href="">Get in touch</a>
-                <div class="icons">
-                    <a class="icon" href="https://www.linkedin.com/in/levente-molnar-324339131/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="icon" href="https://twitter.com/DriEye" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="icon" href="https://dribbble.com/Lepente" target="_blank"><i class="fab fa-dribbble"></i></a>
-                </div>
-                <div class="copy">&copy; 2018 All rights reserved. – Designed & Coded by Levente Molnar</div>
-            </div>
-        </div>
-    </main>
-    
+<div class="section animated fadeInUp">
+    <h2 id="work">Projects</h2>
+    <p id="contact-p">Share your ideas with me via email or twitter and help me to expand my project list, we will work it out together.</p>
+<div class="main-btn">
+    <a class="btn-link" href="mailto:molnar.levente773@gmail.com">Contact</a></div>
+    <div class="icons">
+        <a class="icon" href="https://www.linkedin.com/in/levente-molnar-324339131/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="icon" href="https://twitter.com/DriEye" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="icon" href="https://dribbble.com/Lepente" target="_blank">
+            <i class="fab fa-dribbble"></i>
+        </a>
+    </div>
+</div>
+
+<div id="about" class="section">
+    <h2>About</h2>
+    <img class="prof" src="images/prof.jpg" alt="Profile pic">
+    <p>Hello, I am Levente, my passion and my hobby are creating better experiences for users and well looking design.</p>
+<p>In my freetime I am all about learning new things in design and developing myself.</p>
+</div>
+
+<div class="copy">&copy; 2018 All rights reserved. – Designed & Coded by Levente Molnar</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-    
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </body>
 </html>
