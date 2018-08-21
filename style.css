@@ -87,7 +87,11 @@ p {
     text-decoration: none;
     font-size: 1.8vw;
     font-weight: 300;
-    color: #4392F1;
+    color: #fff;
+}
+
+.mail {
+    text-decoration: underline;
 }
 
 .background {
@@ -103,7 +107,7 @@ p {
 
 .floating {
     animation-name: floating;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -113,7 +117,7 @@ p {
         transform: translateY(0%);
     }
     50% {
-        transform: translateY(-3%);
+        transform: translateY(-5%);
     }
     100% {
         transform: translateY(0%);
@@ -125,7 +129,7 @@ p {
         -webkit-transform: translateY(0%);
     }
     50% {
-        -webkit-transform: translateY(-3%);
+        -webkit-transform: translateY(-5%);
     }
     100% {
         -webkit-transform: translateY(0%);
@@ -226,7 +230,7 @@ i {
     justify-self: center;
     position: relative;
     text-align: center;
-    color: #464652;
+    color: #fff;
 }
 
 .prof{
