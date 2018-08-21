@@ -87,7 +87,7 @@ p {
     text-decoration: none;
     font-size: 1.8vw;
     font-weight: 300;
-    color: #fff;
+    color: #333;
 }
 
 .mail {
@@ -230,7 +230,7 @@ i {
     justify-self: center;
     position: relative;
     text-align: center;
-    color: #fff;
+    color: #333;
 }
 
 .prof{
